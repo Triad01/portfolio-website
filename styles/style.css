@@ -18,6 +18,10 @@
 body {
   background-color: #04619f;
 }
+.btn-info a {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
 /* header styling */
 nav {
   /* background-color:var(--nav-bg-color); */
@@ -403,6 +407,10 @@ h2 {
   align-items: center;
   background-color: red;
 }
+.contact-wrap a {
+  text-decoration: none;
+  color: white;
+}
 
 .section-5 p {
   font-size: 2.3rem;
@@ -485,6 +493,13 @@ h2 {
   width: 100%;
   padding: 25px;
   padding-top: 35px;
+}
+.lower-footer a {
+  text-decoration: none;
+  color: white;
+}
+.lower-footer a:hover {
+  color: var(--bg-green);
 }
 
 /* ======Javascript dependents stylings======================================================== */
@@ -649,7 +664,7 @@ h2 {
   }
   .tabbed-component {
     padding-top: 3px;
-    min-height: 350px;
+    height: 350px;
   }
   .tabbed-component h2 {
     font-size: 1.5em;
@@ -728,6 +743,9 @@ h2 {
   }
   .hire-me {
     font-size: 10px;
+  }
+  .tabbed-component {
+    height: 250px;
   }
   .tabbed-component p {
     margin: 0px;

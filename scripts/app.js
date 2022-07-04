@@ -11,28 +11,29 @@ const tabContainer = document.querySelector('.services')
 const btnTab = document.querySelectorAll('.hire-me')
 const tabContent = document.querySelectorAll('.tabbed-component')
 const mainNav = document.querySelector('.navbar')
+const copyYear = document.querySelector('.copyright-year')
 
 
 
 //  show contact form
-const showContactForm = function () {
-  overlay.classList.remove('hidden');
-  formModal.classList.remove('hidden');
-};
-//  close contact form
-const closeContactForm = function () {
-  overlay.classList.add('hidden');
-  formModal.classList.add('hidden');
-};
+// const showContactForm = function () {
+//   overlay.classList.remove('hidden');
+//   formModal.classList.remove('hidden');
+// };
+// //  close contact form
+// const closeContactForm = function () {
+//   overlay.classList.add('hidden');
+//   formModal.classList.add('hidden');
+// };
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !formModal.classList.contains('hidden')) {
-    closeContactForm();
-  }
-});
+// document.addEventListener('keydown', function (e) {
+//   if (e.key === 'Escape' && !formModal.classList.contains('hidden')) {
+//     closeContactForm();
+//   }
+// });
 
-btnOpenForm.addEventListener('click', showContactForm);
-btnCloseForm.addEventListener('click', closeContactForm);
+// btnOpenForm.addEventListener('click', showContactForm);
+// btnCloseForm.addEventListener('click', closeContactForm);
 
 // button scroll================
 
@@ -52,15 +53,15 @@ btnScrollTo.addEventListener('click', function (e) {
 
 // page navigation====================
 
-nav.addEventListener('click', function (e) {
-  e.preventDefault();
+// nav.addEventListener('click', function (e) {
+//   e.preventDefault();
 
-  if (e.target.classList.contains('nav-link')){
-    const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-  }; 
+//   if (e.target.classList.contains('nav-link')){
+//     const id = e.target.getAttribute('href');
+//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+//   }; 
     
-});
+// });
 
 // tabbed component ========================
 
@@ -100,35 +101,7 @@ const handleHover = function(e){
 nav.addEventListener('mouseover', handleHover.bind(0.5))
 nav.addEventListener('mouseout', handleHover.bind(1))
 
-// scroll navigation============(would fix later)
+//copyright date====
+const getDate = new Date().getFullYear()
+copyYear.textContent = getDate;
 
-// const initialCoords = section1.getBoundingClientRect();
-// window.addEventListener('scroll', function () {
-
-//   if (window.scrollY > initialCoords.top) mainNav.classList.add('sticky');
-//   else mainNav.classList.remove('sticky');
-// });
-
-// Reveal sections =============================
-
-// const allSections = document.querySelectorAll('.section')
-
-// const revealSection = function(entries, observer){
-//   const [entry] = entries;
-
-//   if(!entry.isIntersecting) return;
-//   entry.target.classList.remove('section--hidden')
-//   observer.unobserve(entry.target)
-
-  
-// }
-
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root:null,
-//   threshold:0.15,
-// })
-
-// allSections.forEach(function(section){
-//   sectionObserver.observe(section)
-//   section.classList.add('section--hidden')
-// })
