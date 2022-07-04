@@ -850,6 +850,9 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    padding: 0px;
+  }
   .navbar-brand {
     margin-left: 80%;
   }
@@ -886,12 +889,17 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .navbar a {
+    font-size: 1.2em;
+    padding-top: 20px;
+  }
   header {
     min-height: 100vh;
     font-size: 0.8em;
   }
   .navbar-brand {
     margin-left: 30px;
+    font-size: 4em;
   }
   .header-wrap {
     display: flex;
@@ -903,9 +911,10 @@ h2 {
   }
   .header-text h1 {
     font-size: 4em;
+    padding-left: 25px;
   }
   .header-text p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .header-img {
     width: 500px;
@@ -914,11 +923,11 @@ h2 {
     margin-top: 30px;
   }
   .header-wrap img {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
   .about-me p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .my-works {
     display: flex;
@@ -930,22 +939,22 @@ h2 {
   }
   .my-advantages p {
     margin-top: 75px;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .my-works .my-skills {
     width: 50%;
     margin-left: auto;
   }
   .services p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .my-skills {
     height: 70vh;
   }
   .services .hire-me {
     width: 25%;
-    margin-left: 75px;
-    height: 70px;
+    margin-left: 60px;
+    height: 60px;
     font-size: 1.5em;
   }
   .work-tabs {
@@ -954,7 +963,7 @@ h2 {
     margin-top: 45px;
   }
   .tabbed-component {
-    font-size: 1.1em;
+    font-size: 1em;
     height: 400px;
     min-height: 400px;
     margin-right: 20px;
@@ -976,10 +985,13 @@ h2 {
     width: 40%;
     height: 400px;
     padding-top: 25px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+  }
+  .experience-details h1 {
+    margin-bottom: 50px;
   }
   .experience-details p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .project-catalogue {
     width: 40%;
@@ -1002,7 +1014,7 @@ h2 {
     margin-left: 50px;
     text-align: center;
     padding-top: 10px;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .projects h2 {
     text-align: center;
